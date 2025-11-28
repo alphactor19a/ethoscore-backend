@@ -1,0 +1,25 @@
+## COPY AND PASTE THESE INTO RENDER ENVIRONMENT VARIABLES ##
+
+# 1. Go to your Render dashboard: https://dashboard.render.com/
+# 2. Select your "ethoscore-extension" service
+# 3. Click "Environment" tab on the left
+# 4. Click "Add Environment Variable" for each of these:
+
+# Variable 1
+Key: MODEL_URL_ORDINAL_MODEL_BEST_CHECKPOINT_SAFETENSORS
+Value: https://drive.google.com/uc?export=download&id=1Ed0s_QInYFOgh84YvATcBIFy-ksN9hKr
+
+# Variable 2
+Key: MODEL_URL_3CLASS_MODEL_BEST_CHECKPOINT_SAFETENSORS
+Value: https://drive.google.com/uc?export=download&id=1D6JJyFbrJNPq4s__wGQAh37EL0WUAvEq
+
+# Variable 3
+Key: MODEL_URL_DATASET_FRAMING_ANNOTATIONS_LLAMA_3_3_70B_INSTRUCT_TURBO_CSV
+Value: https://drive.google.com/uc?export=download&id=18WPDWCNONixCAVJs_GxkJHm10mbCr9H4
+
+# 5. Click "Save Changes" at the bottom
+# 6. Render will automatically redeploy your service
+# 7. Wait ~5-10 minutes for models to download and initialize
+# 8. Check: https://ethoscore-extension.onrender.com/health
+# 9. Should show: {"ok":true,"models":{"is_initialized":true},"dataset_loaded":true}
+
